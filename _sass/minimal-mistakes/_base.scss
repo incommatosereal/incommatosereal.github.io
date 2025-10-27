@@ -6,8 +6,6 @@ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -339,3 +337,4 @@ input[type="submit"],
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
+
