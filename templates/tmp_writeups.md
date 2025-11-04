@@ -26,4 +26,6 @@ header:
 # Introducción
 
 
+Gracias por leer, a continuación te dejo la cita del día.
+
 <% await tp.web.daily_quote() %>

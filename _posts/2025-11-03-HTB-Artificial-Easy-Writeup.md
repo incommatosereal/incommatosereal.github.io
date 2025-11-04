@@ -4,6 +4,13 @@ permalink: /Artificial-HTB-Writeup/
 tags:
   - Linux
   - Easy
+  - AI
+  - TensorFlow
+  - "Hash Cracking"
+  - Backrest
+  - "SSH Local Port Forwarding"
+  - "Credentials Leakage"
+  - "Backups"
 categories:
   - writeup
   - hacking
@@ -23,7 +30,7 @@ header:
 ![image-center](/assets/images/posts/artificial-hackthebox.png)
 {: .align-center}
 
-**Habilidades:**
+**Habilidades:** TensorFlow Remote Code Execution, `SQLite` Database Enumeration, Hash Cracking, Backups Enumeration, `Backrest` Credentials Leakage, SSH Local Port Forwarding, Abusing `Backrest` -  Repository with Sensitive Files `(1)`, Remote Code Execution via `Restic` Flag `(2)` [Privilege Escalation]
 
 # Introducción
 
@@ -181,11 +188,12 @@ tensorflow-cpu==2.13.1
 Los modelos de redes neuronales se pueden guardar con capas lambda de `Keras`. La capa `Keras` en TensorFlow está diseñada para permitir la ejecución de código `python` como parte del grafo del modelo.
 
 > `Keras` es una biblioteca de código abierto en Python que funciona como una interfaz de alto nivel para crear y entrenar redes neuronales artificiales.
+{: .notice--info}
 
 Es posible guardar cualquier código en estas capas, por lo que se puede incrustar código malicioso en un modelo que se ejecutará en la máquina de la víctima cuando el modelo sea utilizado.
 
 > Nota que al intentar cargar un archivo cualquiera, el servidor espera un archivo con extensión `.h5`
-
+{: .notice--info}
 ### Malicious TensorFlow Model
 
 Desplegaremos un contenedor con `docker` para construir el modelo malicioso desde un entorno desechable. Primeramente hacemos un `pull` de la imagen de `python` utilizada en el archivo `Dockerfile`
@@ -415,6 +423,7 @@ b49...
 Ejecutando el comando `id`, notaremos que pertenecemos al grupo `sysadm`.
 
 > El objetivo principal de un usuario en el grupo `sysadm` es poder realizar **tareas de configuración, mantenimiento y monitoreo** a nivel de sistema, generalmente sin necesidad de tener el poder absoluto del usuario `root` para cada acción.
+{: .notice--info}
 
 ~~~ bash
 gael@artificial:~$ id
@@ -677,3 +686,9 @@ Ya podremos ver la última flag ubicada en el directorio `/root`
 root@artificial:~# cat root.txt 
 ca9...
 ~~~
+
+Gracias por leer, a continuación te dejo la cita del día.
+
+> The heart has its reasons which reason knows not of.
+> — Blaise Pascal
+{: .notice--info}
