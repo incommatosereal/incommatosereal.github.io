@@ -31,6 +31,7 @@ header:
 {: .align-center}
 
 **Habilidades:** TensorFlow Remote Code Execution, `SQLite` Database Enumeration, Hash Cracking, Backups Enumeration, `Backrest` Credentials Leakage, SSH Local Port Forwarding, Abusing `Backrest` -  Repository with Sensitive Files `(1)`, Remote Code Execution via `Restic` Flag `(2)` [Privilege Escalation]
+{: .notice--info}
 
 # Introducción
 
