@@ -21,7 +21,8 @@ header:
 ![image-center](/assets/images/posts/<% tp.file.title.split("-")[4].toLowerCase() %>-hackthebox.png)
 {: .align-center}
 
-**Habilidades:**
+**Habilidades:** 
+{: .notice--primary}
 
 # Introducción
 
