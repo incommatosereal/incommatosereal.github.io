@@ -28,8 +28,8 @@ toc_label: Topics
 toc_sticky: true
 sidebar: main
 seo_tittle: Voleur - Medium (HTB)
-seo_description: Enumera recursos SMB, abusa de derechos ACL y realiza un volcado de credenciales para vencer Voleur.
-excerpt: Enumera recursos SMB, abusa de derechos ACL y realiza un volcado de credenciales para vencer Voleur.
+seo_description: Enumera recursos SMB, abusa de derechos ACL, abusa de secretos DPAPI y realiza un volcado de credenciales para vencer Voleur.
+excerpt: Enumera recursos SMB, abusa de derechos ACL, abusa de secretos DPAPI y realiza un volcado de credenciales para vencer Voleur.
 header:
   overlay_image: /assets/images/headers/voleur-hackthebox.jpg
   overlay_filter: 0.7
