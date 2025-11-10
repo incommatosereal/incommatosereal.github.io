@@ -915,7 +915,7 @@ svc_backup@DC:/mnt/c/IT/Third-Line Support/Backups$ mv backup.tar.gz /tmp
 Podemos copiar rápidamente hacia nuestra máquina con la ayuda de la herramienta `scp` de la siguiente manera
 
 ~~~ bash
-scp -P 2222 -i id_rsa -r "svc_backup@dc.voleur.htb:/mnt/c/IT/Third-Line Support/Backups/backup.tar.gz" .
+scp -P 2222 -i id_rsa -r "svc_backup@dc.voleur.htb:/tmp/backup.tar.gz" .
 ~~~
 
 Extraemos el archivo comprimido que creamos
