@@ -188,6 +188,7 @@ SMB         10.10.11.75     445    dc               [-] rustykey.htb\rr.parker:8
 En este escenario, no es posible el `fallback` hacia el protocolo NTLM debido a que se encuentra deshabilitado
 
 > Antes de emplear autenticación `kerberos`, debemos recordar sincronizar nuestro reloj local con el del Controlador de Dominio
+{: .notice--warning}
 
 ``` bash
 ntpdate dc.rustykey.htb
@@ -318,6 +319,7 @@ bloodhound-ce-python -d rustykey.htb -u rr.parker -p '8#t5HE8L!W3A' -k -ns 10.10
 La técnica [`Timeroasting`]() abusa del mecanismo de sincronización de tiempo (protocolo NTP/SNTP implementado por Microsoft) en escenarios Windows/Active Directory para obtener hashes (valores criptográficos) derivados de las contraseñas de cuentas de equipo.
 
 > `NTP` (Protocolo de Hora en Red) y SNTP (Protocolo Simple de Hora de Red) son protocolos para sincronizar relojes en una red, pero SNTP es una versión simplificada de NTP.
+{: .notice--info}
 
 ### Understanding Attack
 
@@ -325,7 +327,8 @@ Los equipos dentro de una red Windows suelen utilizar el protocolo NTP/SNTP para
 
 Cuando un equipo necesita sincronizar su reloj, se incluirá el `RID` de su cuenta de equipo en un campo de extensión en la solicitud NTP. El servidor responde con un código de autenticación de mensajes (`MAC`), el cual es calculado en base al hash NTLM de la cuenta objetivo.
 
-> El atacante basta con conocer el RID de las cuentas de equipo objetivo, y como este valor es un tanto predecible, es posible utilizar un rango de RIDs para enviar solicitudes.
+> Basta con conocer el RID de las cuentas de equipo objetivo, como este valor es un tanto predecible, es posible utilizar un rango de RIDs para enviar solicitudes.
+{: .notice--warning}
 
 Con estos hashes derivados de las cuentas de equipo y la suma de otros parámetros de las respuestas NTP, es posible intentos de ataque offline basados en diccionarios mediante la reconstrucción de estos hashes con contraseñas candidatas. Para esto podemos usar la herramienta `hashcat` que implementa el modo `31300` (`MS SNTP`)
 
