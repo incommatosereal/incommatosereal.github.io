@@ -19,9 +19,9 @@ seo_tittle: Aidor - Easy (Dockerlabs)
 seo_description: Aprende a explotar la vulnerabilidad IDOR en un sitio web para vencer Aidor.
 excerpt: Aprende a explotar la vulnerabilidad IDOR en un sitio web para vencer Aidor.
 header:
-  overlay_image: /assets/images/headers/aidor-hackthebox.jpg
+  overlay_image: /assets/images/headers/aidor-dockerlabs.jpg
   overlay_filter: 0.7
-  og_image: /assets/images/headers/aidor-hackthebox.jpg
+  og_image: /assets/images/headers/aidor-dockerlabs.jpg
 ---
 ![image-center](/assets/images/posts/aidor-dockerlabs.png)
 {: .align-center}
@@ -381,3 +381,7 @@ Password:
 root@54f83586c9ed:/home/aidor# id
 uid=0(root) gid=0(root) groups=0(root)
 ```
+
+> Just as much as we see in others we have in ourselves.
+> — William Hazlitt
+{: .notice--info}
