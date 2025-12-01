@@ -2,10 +2,24 @@
 title: RustyKey - Hard (HTB)
 permalink: /RustyKey-HTB-Writeup/
 tags:
+  - Windows
+  - Hard
+  - Kerberos
+  - "Time Roasting"
+  - Hash Cracking
+  - BloodHound
+  - "ACL Rights"
+  - AddSelf
+  - ForceChangePassword
+  - AddMember
+  - "COM Hijacking"
+  - RBCD
+  - "DC Sync"
 categories:
   - writeup
   - hacking
   - hackthebox
+  - "active directory"
 toc: true
 toc_label: Topics
 toc_sticky: true
@@ -21,7 +35,7 @@ header:
 ![image-center](/assets/images/posts/rustykey-hackthebox.png)
 {: .align-center}
 
-**Habilidades:** Kerberos Client Setup, `Timeroasting` Attack, Hash Cracking, Domain Analysis with `Bloodhound`, Password Spraying, Abusing AD ACL Rights - `AddSelf`, Abusing AD ACL Rights - `ForceChangePassword`, Abusing AD ACL Rights - `AddMember`,  Component Object Models (COM) Hijacking, Resource-Based Constrained Delegation (RBCD) Abuse [Privilege Escalation]
+**Habilidades:** Kerberos Client Setup, `Timeroasting` Attack, Hash Cracking, Domain Analysis with `Bloodhound`, Password Spraying, Abusing AD ACL Rights - `AddSelf`, Abusing AD ACL Rights - `ForceChangePassword`, Abusing AD ACL Rights - `AddMember`,  Component Object Models (COM) Hijacking, Resource-Based Constrained Delegation (RBCD) Abuse [Privilege Escalation], DC Sync
 {: .notice--primary}
 
 # Introducción
@@ -1119,6 +1133,7 @@ Como el entorno solamente admite autenticación `kerberos`, debemos conectarnos 
 
 ``` bash
 getTGT.py rustykey.htb/Administrator -hashes :f7a... -dc-ip dc.rustykey.htb
+
 Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
 
 [*] Saving ticket in Administrator.ccache
