@@ -881,7 +881,7 @@ logonHours: ////////////////////////////
 
 El atributo `Logon Hours` se compone de un array de `21` bytes, dividiéndose en `7` bloques de `3` bytes
 
-``` abash
+``` bash
 echo '////////////////////////////' | base64 -d | xxd
 00000000: ffff ffff ffff ffff ffff ffff ffff ffff  ................
 00000010: ffff ffff ff                             .....
