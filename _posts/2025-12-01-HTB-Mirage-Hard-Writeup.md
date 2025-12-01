@@ -27,8 +27,8 @@ toc_label: Topics
 toc_sticky: true
 sidebar: main
 seo_tittle: Mirage - Hard (HTB)
-seo_description: Abusa de registros DDNS , servidor NATS, NTLM Relay de sesiones activas, derechos ACL, ESC10 y más para vencer Mirage.
-excerpt: Abusa de registros DDNS , servidor NATS, NTLM Relay de sesiones activas, derechos ACL, ESC10 y más para vencer Mirage.
+seo_description: Abusa de ADIDNS, un servidor NATS, NTLM Relay de sesiones activas, derechos ACL, ESC10 y más para vencer Mirage.
+excerpt: Abusa de ADIDNS, un servidor NATS, NTLM Relay de sesiones activas, derechos ACL, ESC10 y más para vencer Mirage.
 header:
   overlay_image: /assets/images/headers/mirage-hackthebox.jpg
   overlay_filter: 0.7
