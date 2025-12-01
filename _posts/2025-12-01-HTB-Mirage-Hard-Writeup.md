@@ -22,6 +22,7 @@ categories:
   - writeup
   - hacking
   - hackthebox
+  - "active directory"
 toc: true
 toc_label: Topics
 toc_sticky: true
