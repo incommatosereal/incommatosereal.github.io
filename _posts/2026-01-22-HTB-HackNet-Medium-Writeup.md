@@ -217,7 +217,7 @@ Por detrás se realiza una solicitud hacia el endpoint `/likes/<ID>`
 > Esto permite a los atacantes inyectar directivas de plantilla que ejecutan código arbitrario en el servidor.
 {: .notice--info}
 
-El servidor responde correctamente a pruebas de [`SSTI`](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/Python.md#django), por ejemplo editando nuestro nombre de usuario usando payloads básicos de detección como: `{{ csrf_token }}` o `{% debug %}`
+El servidor responde correctamente a pruebas de [`SSTI`](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/Python.md#django), por ejemplo editando nuestro nombre de usuario usando payloads básicos de detección como: `{{ csrf_token }}`
 
 ![image-center](/assets/images/posts/hacknet-12-hackthebox.png)
 {: .align-center}
