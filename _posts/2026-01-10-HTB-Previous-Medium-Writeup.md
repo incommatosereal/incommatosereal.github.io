@@ -34,7 +34,7 @@ header:
 
 # Introducción
 
-Previous es una máquina Linux de dificultad `Medium` en HackTheBox donde debemos vulnerar un sitio web hecho con la tecnología `Next.js`, donde la vulnerabilidad CVE-2025–29927 nos permitirá alcanzar una ruta protegida. Posteriormente, combinaremos la inclusión de archivos locales (`LFI`) y la enumeración de la estructura de un proyecto `Next.js`, donde obtendremos credenciales para ganar acceso al sistema.
+Previous es una máquina Linux de dificultad `Medium` en HackTheBox donde debemos vulnerar un sitio web desarrollado con la tecnología `Next.js`, en el cual está presenta la vulnerabilidad CVE-2025–29927 que nos permitirá alcanzar una ruta protegida. Posteriormente, combinaremos la inclusión de archivos locales (`LFI`) y la enumeración de la estructura de un proyecto `Next.js`, donde obtendremos credenciales para ganar acceso al sistema.
 
 La escalada de privilegios es posible a través de una implementación insegura de la herramienta `terraform`, donde utilizando un componente malicioso propio haremos que el sistema ejecute comandos con privilegios elevados.
 <br>
