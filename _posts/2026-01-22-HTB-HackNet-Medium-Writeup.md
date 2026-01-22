@@ -237,6 +237,7 @@ Como este proyecto se trata de un blog, podemos intuir que internamente existen 
 Cuando esta variable sea cargada en la plantilla, retornará un `Queryset` con la colección de los objetos de tipo `SocialUser`.
 
 > Un `QuerySet` en `Django` es una colección de objetos de una base de datos, como una lista, que permite leer, filtrar y ordenar datos de manera eficiente antes de obtenerlos.
+{: .notice--info}
 
 ![image-center](/assets/images/posts/hacknet-15-hackthebox.png)
 {: .align-center}
