@@ -4,14 +4,14 @@ permalink: /Imagery-HTB-Writeup/
 tags:
   - Linux
   - Medium
-  - "AES Decrypt"
+  - AES Decrypt
   - XSS
-  - "Local File Inclusion"
+  - Local File Inclusion
   - Fuzzing
-  - "Hash Cracking"
-  - "Command Injection"
+  - Hash Cracking
+  - Command Injection
   - pyAesCrypt
-  - "Python Scripting"
+  - Python Scripting
   - Sudoers
 categories:
   - writeup
@@ -22,8 +22,8 @@ toc_label: Topics
 toc_sticky: true
 sidebar: main
 seo_tittle: Imagery - Medium (HTB)
-seo_description: Explota XSS, Local File Inclusion y privilegios Sudoers para vencer Imagery.
-excerpt: Explota XSS, Local File Inclusion y privilegios Sudoers para vencer Imagery.
+seo_description: Explota XSS, Local File Inclusion y privilegios sudo para vencer Imagery.
+excerpt: Explota XSS, Local File Inclusion y privilegios sudo para vencer Imagery.
 header:
   overlay_image: /assets/images/headers/imagery-hackthebox.jpg
   overlay_filter: 0.7
