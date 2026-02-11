@@ -90,7 +90,7 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : "incommatosereal"
+  username               : "incommatose"
 facebook:
   username               :
   app_id                 :
@@ -114,8 +114,8 @@ analytics:
 # Site Author
 author:
   name             : "incommatose"
-  avatar           : "/assets/images/author2.png"
-  bio              : "`Cybersecurity Enthusiast 🕵️‍♂️ | CTF Player 🚩 | Ethical Hacking 💻`"
+  avatar           : "/assets/images/author.png"
+  bio              : "`Cybersecurity Enthusiast 🕵️‍♂️ | CTF Player 🚩 | Computer Engineering 💻`"
   location         : "Chile"
   email            :
   links:
@@ -138,7 +138,7 @@ footer:
       url: "https://twitter.com/incommatose"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/incommatose"
+      url: "https://github.com/incommatosereal"
     - label: "Discord"
       icon: "fab da-fw fa-discord"
       url: "https://discord.com/1430986515969868007"
