@@ -6,7 +6,7 @@ last_modified_at: 2025-03-6T16:04:26-04:00
 toc: false
 ---
 
-Soy agustín (A.K.A incommatose), si estás aquí es porque te interesa saber más sobre mi y lo que hago.
+Hey 👋, mi nombre es Agustín (A.K.A incommatose), si estás aquí es porque te interesa saber más sobre mi y lo que hago.
 
 Actualmente soy egresado de Ingeniería en Informática, me apasiona la ciberseguridad, el Lo-Fi y los gatos.
 
