@@ -1203,7 +1203,7 @@ El problema radica en la fuga de un descriptor de archivo que un contenedor reci
 
 `runc` crea un identificador para el grupo de control `/sys/fs/cgroup` del host, al que el `runc` podría acceder desde `/proc/self/fd/`.
 
-Podemos encontrar una prueba de concepto desde el siguiente post de [`vsociety_`](https://www.vicarius.io/vsociety/posts/leaky-vessels-part-1-cve-2024-21626)
+Podemos encontrar una prueba de concepto y detalles técnicos desde el siguiente post de [`vsociety_`](https://www.vicarius.io/vsociety/posts/leaky-vessels-part-1-cve-2024-21626)
 
 ### Setup
 
@@ -1410,7 +1410,7 @@ babywyrm@giveback:/tmp$ cat config.json
 
 Ahora continuaremos con los archivos necesarios para lanzar el contenedor adecuadamente. 
 
-Crearemos un directorio para alojar estos archivos, luego allí dentro crearemos un directorio `rootfs` y descomprimiremos el `.tar` allí
+Crearemos un directorio para alojar estos archivos, luego allí dentro crearemos un directorio `rootfs` y descomprimiremos el `.tar`
 
 ``` bash
 babywyrm@giveback:/tmp$ mkdir evilcontainer
@@ -1438,7 +1438,7 @@ babywyrm@giveback:/tmp/evilcontainer$ cat config.json | grep cwd
 
 ### Root Time
 
-Ahora iniciaremos el contenedor usando la flag `--log`, la cual es necesaria
+Ahora iniciaremos el contenedor usando la flag `--log`, la cual es necesaria para que el `fd` (descriptor de archivo) sea asignado en la  `7` en vez de `3`, como se explica en el post de [`vsociety_`](https://www.vicarius.io/vsociety/posts/leaky-vessels-part-1-cve-2024-21626)
 
 ``` bash
 babywyrm@giveback:/tmp/evilcontainer$ sudo /opt/debug --log /tmp/log.json run evilcontainer
