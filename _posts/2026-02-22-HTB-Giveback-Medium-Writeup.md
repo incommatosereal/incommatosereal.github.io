@@ -1492,7 +1492,7 @@ e1d...
 
 Cuando intentamos escalar privilegios sin tener en cuenta el CVE, simplemente siguiendo una guía de [`HackTricks`](https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/runc-privilege-escalation.html#pe) (se podía cuando salió la máquina, y fue parchado, aunque aún es posible).
 
-Prepararemos un directorio para alojar los archivos del contenedor, tal como lo hicimos [anteriormente](#Setup).
+Prepararemos un directorio para alojar los archivos del contenedor, tal como lo hicimos [anteriormente](#setup).
 
 > En este caso estoy asumiendo que tienes la imagen de `alpine` en el directorio actual, tal como lo hicimos en la explotación del CVE.
 {: .notice--warning}
