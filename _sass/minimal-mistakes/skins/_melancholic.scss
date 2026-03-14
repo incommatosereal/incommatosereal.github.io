@@ -1,3 +1,4 @@
+/* I just vibecoded this shit */
 @import url('https://fonts.googleapis.com/css2?family=VT323&family=Fragment+Mono:ital@0;1&display=swap');
 
 $serif      : 'Fragment Mono', monospace !default;
@@ -38,11 +39,42 @@ td > code {
 .highlight,
 figure.highlight,
 pre.highlight {
-  background-color:#0d1f35 !important;
-  color: #7a9ab0 !important;  /* gris azulado muy apagado */
+  background-color:#091d36 !important;
+  color:  #dfe7ed!important;  /* gris azulado muy apagado */
 }
 
 .highlight pre,
 .highlight code {
   color: #7a9ab0 !important;
+}
+
+div.highlighter-rouge,
+figure.highlight {
+  border-radius: 50%;
+  position: relative;
+  padding-top: 36px !important;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: #ff5f57;
+    box-shadow:
+      20px 0 0 #febc2e,
+      40px 0 0 #28c840;
+  }
+}
+
+.layout--home .page {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.layout--home #main {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
