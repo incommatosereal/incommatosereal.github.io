@@ -9,22 +9,20 @@ $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: #ffffff !default;
 $navicon-link-color-hover: #ffffff !default;
 
-$base00: #070f1e !default;  /* fondo del bloque — casi igual al bg */
-$base01: #0a1525 !default;
-$base02: #0f1f35 !default;  /* selección, line highlight */
-$base03: #1e3050 !default;  /* comentarios */
-$base04: #2a4060 !default;  /* line numbers */
-$base05: #8aaabf !default;  /* texto base — más apagado */
-$base06: #a0c0d8 !default;
-$base07: #c8d8e8 !default;
-$base08: #7a3a40 !default;  /* rojo — muy desaturado */
-$base09: #6a5030 !default;  /* naranja — casi marrón oscuro */
-$base0a: #5a4e30 !default;  /* amarillo — tierra oscura */
-$base0b: #2a5040 !default;  /* verde — muy apagado */
-$base0c: #1e4a55 !default;  /* cyan — casi fondo */
-$base0d: #2a4a70 !default;  /* azul — se funde */
-$base0e: #4a2a5a !default;  /* púrpura — oscuro */
-$base0f: #4a2020 !default;  /* marrón */
+$code-background-color: mix(#555, $background-color, 15%) !default;
+$code-background-color-dark: mix(#555, $background-color, 20%) !default;
+$form-background-color: mix(#000, $background-color, 15%) !default;
+
+.author__urls.social-icons i,
+.author__urls.social-icons .svg-inline--fa,
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa  {
+  color: inherit;
+}
+
+.ais-search-box .ais-search-box--input {
+  background-color: background-color;
+}
 
 code.highlighter-rouge,
 p > code,
