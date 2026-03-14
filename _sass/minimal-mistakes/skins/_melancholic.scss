@@ -1,6 +1,6 @@
 $background-color: #050d1a !default;
-$text-color: #c8d8e8 !default;
-$muted-text-color: #6a8aaa !default;
+$text-color: #a8b8c8 !default;
+$muted-text-color: #4a6070 !default;
 $primary-color: #4a7fc1 !default;
 $border-color: #0d2040 !default;
 $footer-background-color: #030a12 !default;
@@ -27,4 +27,16 @@ td > code {
   background-color: #0a1a2e !important;
   color: #7aaad0 !important;
   font-size: 0.85em !important;
+}
+
+.highlight,
+figure.highlight,
+pre.highlight {
+  background-color: #070f1e !important;
+  color: #7a9ab0 !important;  /* gris azulado muy apagado */
+}
+
+.highlight pre,
+.highlight code {
+  color: #7a9ab0 !important;
 }
