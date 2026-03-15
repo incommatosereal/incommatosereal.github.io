@@ -22,7 +22,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "My Hacking Notes"
 description              : "This is a place to learn different pentesting techniques. Here you can find write-ups, cheat sheets or pentesting methodologies for different services."
-url                      : "https://incommatosereal.github.io"
+url                      : "https://incommatose.com"
 baseurl                  : # "/"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # "/assets/images/500x300.png"
@@ -82,7 +82,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification : dwCZNbSiEyuRckPXFyluv4JrxgmTHHhlAdoV_FMGoqc
+google_site_verification :
 bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "incommatose"
   avatar           : "/assets/images/author.png"
-  bio              : "`Cybersecurity Enthusiast 🕵️‍♂️ | eJPTv2 | CTF Player 🚩 | Computer Engineering 💻`"
+  bio              : "Cybersecurity Enthusiast 🕵️‍♂️ | eJPTv2 | CTF Player 🚩 | Computer Engineering 💻"
   location         : "Chile"
   email            :
   links:

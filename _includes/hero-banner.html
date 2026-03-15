@@ -1,4 +1,3 @@
-<!-- _includes/hero-banner.html -->
 <div class="hero-banner">
   <div class="hero-banner__overlay"></div>
 
@@ -12,15 +11,12 @@
       >
     </div>
 
-    <!-- NOMBRE CON TYPEWRITER -->
     <div class="hero-banner__terminal">
       <span id="hero-typed"></span><span class="hero-banner__cursor">█</span>
     </div>
 
-    <!-- BIO -->
     <p class="hero-banner__bio" id="hero-bio"></p>
 
-    <!-- LINKS SOCIALES -->
     <div class="hero-banner__links">
       {% for link in site.author.links %}
         {% if link.url and link.url != "" %}
@@ -191,10 +187,10 @@
 <script>
 (function () {
   var lines = [
-    "root@incommatose:~$ whoami",
+    "incommatose@vps-ds64534wv:~$ whoami",
     "incommatose",
-    "root@incommatose:~$ cat role.txt",
-    "Cybersecurity Enthusiast | eJPTv2 | CTF Player | Computer Engineering"
+    "incommatose@vps-ds64534wv:~$ cat role.txt",
+    "Cybersecurity Enthusiast | eJPTv2 | CTF Player | Computer Engineer"
   ];
 
   var typedEl = document.getElementById('hero-typed');
