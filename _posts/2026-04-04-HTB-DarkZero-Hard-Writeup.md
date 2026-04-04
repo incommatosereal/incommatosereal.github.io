@@ -1043,6 +1043,8 @@ evil-winrm-py PS C:\Users\Administrator\Documents> type ..\Desktop\root.txt
 7a8...
 ~~~
 
+Gracias por leer hasta el final, te dejo la cita del día:
+
 > Every human being is the author of his own health or disease.
 > — Buddha
 {: .notice--info}
