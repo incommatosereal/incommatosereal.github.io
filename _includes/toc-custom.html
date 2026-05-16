@@ -1,0 +1,48 @@
+<script>
+(function() {
+  var tocMenu = document.querySelector('.toc__menu');
+  var sidebar = document.querySelector('.sidebar__right');
+  if (!tocMenu || !sidebar) return;
+
+  // 1. Mobile Toggle Logic
+  var toggleBtn = document.createElement('button');
+  toggleBtn.className = 'toc-mobile-toggle';
+  toggleBtn.innerHTML = '<i class="fas fa-list"></i>';
+  toggleBtn.setAttribute('aria-label', 'Toggle Table of Contents');
+  document.body.appendChild(toggleBtn);
+
+  toggleBtn.addEventListener('click', function() {
+    sidebar.classList.toggle('is-open');
+    toggleBtn.classList.toggle('is-active');
+    document.body.classList.toggle('toc-open'); // Added class to body
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!sidebar.contains(e.target) && !toggleBtn.contains(e.target)) {
+      sidebar.classList.remove('is-open');
+      toggleBtn.classList.remove('is-active');
+      document.body.classList.remove('toc-open'); // Remove class from body
+    }
+  });
+
+  // 2. Auto-scroll logic (existing)
+  document.addEventListener('gumshoeActivate', function (event) {
+    var activeLink = event.detail.link;
+    if (!activeLink) return;
+
+    var tocContainer = activeLink.closest('.toc__menu');
+    if (!tocContainer) return;
+
+    var containerRect = tocContainer.getBoundingClientRect();
+    var linkRect = activeLink.getBoundingClientRect();
+
+    if (linkRect.top < containerRect.top || linkRect.bottom > containerRect.bottom) {
+      activeLink.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest'
+      });
+    }
+  }, false);
+})();
+</script>

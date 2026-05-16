@@ -1,0 +1,164 @@
+/* ==========================================================================
+   MINIMALIST TOC - TEXT-ONLY HIGHLIGHT (NO BACKGROUND)
+   ========================================================================== */
+
+.sidebar__right {
+  &.sticky {
+    @include breakpoint($large) {
+      top: 1.5rem !important;
+      left: 1em;
+    }
+  }
+}
+
+.toc {
+  background-color: $background-color !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-family: $global-font-family;
+  margin-top: 0 !important;
+
+  .nav__title {
+    background: transparent !important;
+    color: $text-color !important;
+    font-family: $header-font-family !important;
+    font-size: $type-size-6;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 1.5rem 0.5em;
+    margin-bottom: 0.75em;
+    border-bottom: 1px solid $border-color !important;
+
+    i { display: none; }
+  }
+}
+
+.toc__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: $type-size-7;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  // 1. FORCE TRANSPARENT BACKGROUNDS EVERYWHERE
+  li, li.active, .active, a, a:hover {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  a {
+    display: block;
+    padding: 0.25rem 1.5rem;
+    color: $muted-text-color !important;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: $text-color !important;
+      text-decoration: underline !important;
+    }
+  }
+
+  // 2. SUBTLE TEXT-ONLY HIGHLIGHT FOR ACTIVE ITEM
+  // Target multiple selectors to ensure we beat the theme's specificity
+  li.active > a,
+  .active > a,
+  .toc .active a {
+    color: $text-color !important; // Brighter color (standard text instead of muted)
+    font-weight: bold !important;
+    text-shadow: 0.5px 0 0 currentColor; // Slight weight without pushing layout
+    background: transparent !important;
+    background-color: transparent !important;
+
+    // Optional subtle dash if you liked it, otherwise leave as text-only
+    &::before {
+      content: "—";
+      margin-left: -1.25rem;
+      margin-right: 0.5rem;
+      opacity: 0.6;
+    }
+  }
+
+  // Indentation levels
+  ul li a { padding-left: 2.25rem; }
+  ul ul li a { padding-left: 3rem; }
+}
+
+// Hide mobile toggle by default on Desktop
+.toc-mobile-toggle {
+  display: none;
+}
+
+// Mobile: Drawer and Toggle logic
+@include breakpoint(max-width $large - 1px) {
+  // Smoothly hide the navigation bar when the TOC is open
+  .masthead {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out !important;
+  }
+
+  body.toc-open .masthead {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .sidebar__right {
+    position: fixed !important;
+    top: 0 !important;
+    right: -280px; 
+    width: 280px !important;
+    height: 100vh !important;
+    background-color: $background-color !important; 
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 9999 !important;
+    padding: 1rem 0;
+    box-shadow: -10px 0 40px rgba(0,0,0,0.5); 
+    transition: right 0.3s ease-in-out;
+    margin: 0 !important;
+    overflow-y: auto;
+    border-left: 1px solid $border-color;
+
+    &.is-open {
+      right: 0 !important;
+    }
+
+    .toc { padding: 1rem 0; }
+  }
+
+  .toc-mobile-toggle {
+    display: flex;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3.25rem;
+    height: 3.25rem;
+    background-color: darken($text-color, 10%) !important;
+    color: $background-color;
+    border-radius: 50%;
+    z-index: 1001;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+    &.is-active { background-color: $primary-color !important; }
+  }
+}
