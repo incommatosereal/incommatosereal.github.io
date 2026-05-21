@@ -120,7 +120,7 @@ Nmap done: 1 IP address (1 host up) scanned in 21.59 seconds
 ```
 
 > Considera usar este tipo de escaneos con `rustscan` exclusivamente en entornos de CTFs, para otros entornos revisa la siguiente advertencia publicada en [`Github`](https://github.com/bee-san/RustScan/wiki/Usage#%EF%B8%8F-warning).
-> {: .notice--warning}
+{: .notice--warning}
 
 - `--ulimit 5000`: Acelera el escaneo incrementando el descriptor de archivo.
 - `-sC`: Lanzar scripts de reconocimiento más comunes.
