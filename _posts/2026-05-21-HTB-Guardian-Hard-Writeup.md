@@ -27,8 +27,8 @@ toc_label: Topics
 toc_sticky: true
 sidebar: main
 seo_tittle: Guardian - Hard (HTB)
-seo_description: Cómo las credenciales por defecto y un sitio web inseguro pueden comprometer totalmente un sitio web y el servidor subyacente.
-excerpt: Cómo las credenciales por defecto y un sitio web inseguro pueden comprometer totalmente un sitio web y el servidor subyacente.
+seo_description: Cómo las credenciales por defecto y una configuración insegura pueden comprometer totalmente un sitio web y el servidor subyacente.
+excerpt: Cómo las credenciales por defecto y una configuración insegura pueden comprometer totalmente un sitio web y el servidor subyacente.
 header:
   overlay_image: /assets/images/headers/guardian-hackthebox.jpg
   overlay_filter: 0.7
