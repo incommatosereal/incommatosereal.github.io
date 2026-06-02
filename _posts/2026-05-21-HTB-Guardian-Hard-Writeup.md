@@ -738,7 +738,7 @@ Al igual que si intentamos llamar a un archivo que no existe, saldrá un error s
 
 ### Exploiting
 
-Utilizaremos la siguiente [prueba de concepto]() para generar una cadena de filtros que podamos utilizar para ejecutar código `PHP`.
+Utilizaremos la siguiente [prueba de concepto](https://github.com/synacktiv/php_filter_chain_generator) para generar una cadena de filtros que podamos utilizar para ejecutar código `PHP`.
 
 > A modo de prueba, podemos ejecutar un comando a nivel de sistema trazable, como `id`, el cual debería mostrar su salida dentro de la web.
 {: .notice--warning}
