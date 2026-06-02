@@ -1188,7 +1188,7 @@ drwxr-sr-x 4 root admins 4096 Jul 10  2025 ..
 -rwxrwx--- 1 mark admins  253 Apr 26  2025 status.py
 ```
 
-Afortunadamente, `mark` forma parte del grupo `admins`, por lo que puede editar el contenido del script `status.py`
+Afortunadamente, `jamil` forma parte del grupo `admins`, por lo que puede editar el contenido del script `status.py`
 
 ``` bash
 jamil@guardian:~$ id
