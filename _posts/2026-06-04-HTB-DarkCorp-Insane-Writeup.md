@@ -4,6 +4,28 @@ permalink: /DarkCorp-HTB-Writeup/
 tags:
   - Windows
   - Insane
+  - CVE-2024-42009
+  - Roundcube
+  - XSS
+  - "SQL Injection"
+  - "GPG"
+  - "Credentials Leakage"
+  - "Hash Cracking"
+  - Pivoting
+  - BloodHound
+  - "AD CS"
+  - ESC8
+  - "Kerberos Relay"
+  - "DPAPI Abuse"
+  - "ACL Rights"
+  - GenericWrite
+  - "Shadow Credentials"
+  - "Mixed Vendor Kerberos Stacks"
+  - "UPN Spoofing"
+  - SSSD
+  - "Hash Cracking"
+  - "Credential Dumping"
+  - "DCSync"
 categories:
   - writeup
   - hacking
@@ -2640,7 +2662,7 @@ Certipy v5.0.3 - by Oliver Lyak (ly4k)
 ```
 
 
-## Abusing Mixed Vendors Kerberos Stacks
+## Abusing Mixed Vendor Kerberos Stacks
 
 Estamos en un escenario donde tenemos un entorno mixto de `Kerberos`. Por un lado Active Directory, y por otro lado un entorno `Linux` unido al dominio. 
 
