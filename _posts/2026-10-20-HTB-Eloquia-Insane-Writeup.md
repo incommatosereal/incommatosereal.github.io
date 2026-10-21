@@ -11,13 +11,15 @@ toc_label: Topics
 toc_sticky: true
 sidebar: main
 seo_tittle: Eloquia - Insane (HTB)
-seo_description: Eloquia consiste en un XSS en AngularJS, secuestrar OAuth, ejecutar DLLs maliciosas y comprometer un Windows Server completamente a través de la implementación insegura de permisos en un proyecto.
-excerpt: Eloquia consiste en un XSS en AngularJS, secuestrar OAuth, ejecutar DLLs maliciosas y comprometer un Windows Server completamente a través de la implementación insegura de permisos en un proyecto.
+seo_description: XSS en AngularJS, secuestrar OAuth, ejecutar DLLs maliciosas y comprometer un Windows Server completamente a través de la implementación insegura de permisos en un proyecto.
+excerpt: XSS en AngularJS, secuestrar OAuth, ejecutar DLLs maliciosas y comprometer un Windows Server completamente a través de la implementación insegura de permisos en un proyecto.
 header:
   overlay_image: /assets/images/headers/eloquia-hackthebox.jpg
   overlay_filter: 0.7
   og_image: /assets/images/headers/eloquia-hackthebox.jpg
 ---
+![image-center](/assets/images/posts/eloquia-hackthebox.png)
+{: .align-center}
 # Introducción
 
 Eloquia es una máquina Windows de dificultad Insane en HackTheBox. En este escenario comprometeremos un servidor web que utiliza AngularJS y es vulnerable a XSS, desde un simple `alert()` lograremos comprometer la cuenta del adminstrador del sitio, para luego usando una extensión maliciosa para SQLite obtener ejecución remota de comandos.
