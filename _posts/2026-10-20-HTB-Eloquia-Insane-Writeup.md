@@ -11,8 +11,8 @@ toc_label: Topics
 toc_sticky: true
 sidebar: main
 seo_tittle: Eloquia - Insane (HTB)
-seo_description: XSS en AngularJS, secuestrar OAuth, ejecutar DLLs maliciosas y comprometer un Windows Server completamente a través de la implementación insegura de permisos en un proyecto.
-excerpt: XSS en AngularJS, secuestrar OAuth, ejecutar DLLs maliciosas y comprometer un Windows Server completamente a través de la implementación insegura de permisos en un proyecto.
+seo_description: Desde un simple `alert()` a robar la sesión de administrador de la web  usando OAuth.
+excerpt: Desde un simple `alert()` a robar la sesión de administrador de la web usando OAuth.
 header:
   overlay_image: /assets/images/headers/eloquia-hackthebox.jpg
   overlay_filter: 0.7
