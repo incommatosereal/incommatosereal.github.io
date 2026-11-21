@@ -118,7 +118,7 @@ author:
   email            :
   links:
     - label: "Email"
-      icon: "fab fa-fw "
+      icon: "fab fa-fw fa-envelope"
       url: "mailto:contact@incommatose.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
