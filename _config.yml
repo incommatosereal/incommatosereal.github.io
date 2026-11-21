@@ -21,7 +21,7 @@ title                    : "Hacking Notes"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Hacking Notes"
-description              : "Stopping just running tools and starting to understand vulnerabilities."
+description              : "Move beyond running tools and start understanding vulnerabilities."
 url                      : "https://incommatose.com"
 baseurl                  : # "/"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -113,12 +113,12 @@ analytics:
 author:
   name             : "incommatose"
   avatar           : "/assets/images/author2.jpeg"
-  bio              : "Computer Engineer | Bug Hunting | HTB Player"
+  bio              : "`Computer Engineer | Bug Hunting | HTB Player`"
   location         : "Chile"
   email            :
   links:
     - label: "Email"
-      icon: "fab fa-fw fa-square-envelope"
+      icon: "fab fa-fw "
       url: "mailto:contact@incommatose.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -132,7 +132,7 @@ author:
 footer:
   links:
     - label: "EMail"
-      icon: "fab fa-fw fa-square-envelope"
+      icon: "fab fa-fw fa-envelope"
       url: "mailto:contact@incommatose.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
